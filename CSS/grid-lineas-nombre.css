@@ -1,0 +1,25 @@
+@import url(Styles.css);
+
+.grid-nombre{
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    grid-template-columns: [linea-c1] 1fr [linea-c2] 1fr [Linea-c3] 1fr [Linea-c4];
+    grid-template-rows: [linea-r1]1fr [linea-r2]1fr [linea-r3]1fr [linea-r4];
+
+}
+
+.grid-nombre .item:nth-child(3){
+
+    background-color: brown;
+    color: #fff;
+
+    /* grid-area: 1/3 / span 3; */
+
+    /* grid-row: linea-r1 / linea-r4 ; */
+    grid-column: Linea-c3 / Linea-c4;
+    grid-row: linea-r1 / linea-r4;
+}

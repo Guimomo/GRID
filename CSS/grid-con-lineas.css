@@ -1,0 +1,47 @@
+@import url(Styles.css);
+
+.grid-lineas{
+
+    display: grid;
+
+    grid-template-columns: 20% repeat(2,30%) 20%;
+    grid-template-rows: repeat(5, auto);
+}
+
+.grid-lineas .item:nth-child(10){
+
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    border-radius: 30px;
+
+    /* shorthand------------------------ */
+
+    /* grid-column: 2/4;
+    grid-row: 2/4; */
+
+    /* 
+    shorthand del shorthand----------------
+    */
+
+    grid-area: 2/2/4/5;
+}
+
+.grid-lineas .item:nth-child(2){
+
+    grid-area: 1/1/2/5;
+    background-color: steelblue;
+    color: #fff;
+}
+
+.grid-lineas .item:nth-child(9){
+
+
+    background-color: violet;
+    color: #fff;
+    grid-area: 5/2 / span 3;
+}
+
+
