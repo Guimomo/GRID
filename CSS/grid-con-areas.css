@@ -1,0 +1,36 @@
+@import url(Styles.css);
+
+.grid-area{
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+
+    grid-template-areas: 
+    'header header header header'
+    'sidebar content content content'
+    'sidebar content content content'
+    'footer footer footer footer';
+}
+
+.header{
+    grid-area: header;
+    background-color: white;
+
+}
+
+.content{
+    grid-area: content;
+    background-color: steelblue;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: tomato;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: violet;
+}
