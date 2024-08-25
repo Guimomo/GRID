@@ -1,0 +1,33 @@
+@import url(Styles.css);
+
+.grid-aline{
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 200px);
+
+    justify-items: stretch;
+    /* justify-items: end;
+    justify-items: start;
+    justify-items: center; */
+
+    align-items: stretch;
+    align-items: end;
+    align-items: start;
+    align-items: center;
+}
+
+
+.grid-aline .item:nth-child(2){
+
+    background-color: tomato;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: center;
+    justify-self: center;
+}

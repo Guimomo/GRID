@@ -1,0 +1,18 @@
+@import url(Styles.css);
+
+.grid-track{
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 200px);
+
+    justify-content: start;
+
+    align-content: space-around;
+    align-content: end;
+    align-content: space-between;
+    align-content: space-evenly;
+
+    
+}

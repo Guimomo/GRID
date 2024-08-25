@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +10,11 @@
 
 body{
 
-    background-color: #0c0c0c ;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-style: normal;
+
+    background-color: #1a1a1a ;
     height: 100vh;
 
     display: grid;
@@ -43,12 +51,61 @@ body{
 
     display: grid;
 
-    grid-template-columns: repeat(4 , 1fr);
-    grid-template-rows: repeat(3 , 200px);
+    grid-template-columns: repeat(5 , 340px);
+    grid-template-rows: repeat(3 , 300px);
+
+    margin: 0 auto;
+
+    margin-top: 20px;
+
+    align-content: space-evenly;
+    justify-content: space-evenly;
 
 }
 
 .item{
 
-    background-color: azure;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* border: solid 1px azure; */
+    justify-content: center;
 }
+
+.item .content{
+
+    text-align: center;
+    
+}
+
+.item  .info_text{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.item .tittle{
+
+    text-align: left;
+    width: 250px;
+
+}
+
+.item .channel-logo{
+
+    display: inline-block;
+    width: 40px;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+.item .miniatura{
+
+    display: inline-block;
+    border-radius: 5px;
+    width: 96%;
+    margin-bottom: 5px;
+}
+
