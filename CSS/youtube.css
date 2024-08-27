@@ -47,7 +47,7 @@ body{
 
     display: flex;
     height: 45px;
-    width: 100%;
+    /* width: 100%; */
     align-items: center;
     justify-content: left;
     gap: 10px;
